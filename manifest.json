@@ -1,0 +1,23 @@
+[
+  {
+    "kind": "column",
+    "name": "Find next page",
+    "description": "Find the next verse",
+    "author": "glide.apps.elbazi@gmail.com>",
+    "params": [
+      {
+        "name": "ayatID",
+        "displayName": "AyatID",
+        "type": "number"
+      },
+      {
+        "name": "level",
+        "displayName": "Level",
+        "type": "number"
+      }
+    ],
+    "result": {
+      "type": "number"
+    }
+  }
+]
