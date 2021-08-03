@@ -6241,7 +6241,7 @@ var salary = [
 [6235,604,114,5,1,15,5],
 [6236,604,114,6,1,15,6],
 ];
-window.function = function (ayatID, level) {
+window.function = function (ayatID, level,reading) {
   // For each parameter, its `.value` contains
   // either its value in the type you've declared,
   // or it's `undefined`.  This is a good place to
@@ -6249,6 +6249,7 @@ window.function = function (ayatID, level) {
   // values.
   ayatID = ayatID.value ?? 1;
   level = level.value ?? 1;
+  reading = level.reading ?? "Hafs";
 
   // Your function should return the exact type
   // you've declared for the `result` in
@@ -6257,11 +6258,11 @@ window.function = function (ayatID, level) {
   // required input is `undefined`, for example.
   //return str.substring(start, end);
   if(level==1 || level==0){
-    	ayatID= ayatID + 1;
+    	ayatID= ayatID;
   }
   else
   {
-      ayatID = ayatID + Math.round(salary[ayatID][5]/levels[level]);      
+      ayatID = ayatID + Math.round(salary[ayatID][5]/levels[level])-1;      
   }
   
   return ayatID;
