@@ -1,8 +1,8 @@
 [
   {
     "kind": "column",
-    "name": "Find next page",
-    "description": "Find the next verse",
+    "name": "Find To Ayat",
+    "description": "Find To Ayat",
     "author": "glide.apps.elbazi@gmail.com>",
     "params": [
       {
@@ -14,6 +14,11 @@
         "name": "level",
         "displayName": "Level",
         "type": "number"
+      },
+      {
+        "name": "reading",
+        "displayName": "Reading",
+        "type": "string"
       }
     ],
     "result": {
